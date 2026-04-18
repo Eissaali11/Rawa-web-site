@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-lang="ar" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تسجيل الدخول | Riaya Login</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--or:#FF6B1A;--or2:#FF8C42;--or-g:rgba(255,107,26,.14);--bg:#0A1628;--bg2:#0F1F38;--bg3:#162040;--card:#111D33;--txt:#F0F4FF;--txt2:#8FA0BB;--bdr:rgba(255,255,255,.07);--bdr-or:rgba(255,107,26,.28);--r:16px;--font-ar:'Cairo',sans-serif;--font-en:'Inter',sans-serif;}
+[data-theme="light"]{--bg:#F0F4FA;--bg2:#E4EBF5;--bg3:#D8E3F0;--card:#FFFFFF;--txt:#0F1F38;--txt2:#4A6080;--bdr:rgba(0,0,0,.09);--bdr-or:rgba(255,107,26,.35);}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{height:100%;}
+body{font-family:var(--font-ar);background:var(--bg);color:var(--txt);min-height:100vh;display:flex;align-items:center;justify-content:center;transition:background .35s,color .35s;}
+[data-lang="en"]{direction:ltr;font-family:var(--font-en);}
+[data-lang="en"] [data-ar]{display:none;}
+[data-lang="ar"] [data-en]{display:none;}
+.login-wrap{width:100%;max-width:420px;padding:20px;}
+.login-card{background:var(--card);border:1px solid var(--bdr);border-radius:var(--r);padding:40px 32px;box-shadow:0 24px 64px rgba(0,0,0,.45);}
+.login-logo{text-align:center;margin-bottom:28px;}
+.login-logo img{height:56px;filter:drop-shadow(0 2px 10px rgba(255,107,26,.35));}
+.login-title{text-align:center;font-size:22px;font-weight:700;margin-bottom:6px;}
+.login-sub{text-align:center;font-size:13px;color:var(--txt2);margin-bottom:28px;}
+.tabs{display:flex;gap:4px;background:var(--bg3);border-radius:10px;padding:4px;margin-bottom:24px;}
+.tab{flex:1;padding:10px;text-align:center;border:none;background:transparent;color:var(--txt2);border-radius:8px;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;transition:all .25s;}
+.tab.act{background:var(--or);color:#fff;box-shadow:0 2px 8px rgba(255,107,26,.3);}
+.form-group{margin-bottom:16px;}
+.form-group label{display:block;font-size:13px;font-weight:600;color:var(--txt2);margin-bottom:6px;}
+.form-group input{width:100%;padding:12px 16px;background:var(--bg2);border:1px solid var(--bdr);border-radius:10px;color:var(--txt);font-size:14px;font-family:inherit;outline:none;transition:border-color .25s;}
+.form-group input:focus{border-color:var(--or);}
+.btn-login{width:100%;padding:14px;background:linear-gradient(135deg,var(--or),var(--or2));color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;transition:all .3s;box-shadow:0 4px 14px rgba(255,107,26,.35);margin-top:8px;}
+.btn-login:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(255,107,26,.5);}
+.form-panel{display:none;}
+.form-panel.act{display:block;}
+.top-actions{position:fixed;top:20px;right:20px;display:flex;gap:8px;z-index:10;}
+.btn-sm{padding:8px 14px;border:1px solid var(--bdr);background:transparent;border-radius:10px;cursor:pointer;font-family:inherit;font-size:12px;font-weight:700;color:var(--txt2);transition:all .25s;}
+.btn-sm:hover{border-color:var(--bdr-or);background:var(--or-g);color:var(--or);}
+.toast{position:fixed;bottom:30px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--card);border:1px solid var(--bdr);padding:14px 28px;border-radius:12px;font-size:14px;box-shadow:0 12px 32px rgba(0,0,0,.3);transition:transform .4s cubic-bezier(.34,1.56,.64,1);z-index:9999;white-space:nowrap;}
+.toast.show{transform:translateX(-50%) translateY(0);}
+.back-link{text-align:center;margin-top:16px;}
+.back-link a{color:var(--txt2);font-size:13px;text-decoration:none;transition:color .25s;}
+.back-link a:hover{color:var(--or);}
+@media(max-width:480px){.login-card{padding:28px 20px;}.top-actions{top:12px;right:12px;}}
+</style>
+</head>
+<body>
+
+<div class="top-actions">
+  <button class="btn-sm" onclick="toggleTheme()" id="theme-btn">🌙</button>
+  <button class="btn-sm" onclick="toggleLang()" id="lang-btn">EN</button>
+</div>
+
+<div class="login-wrap">
+  <div class="login-card">
+    <div class="login-logo"><img src="img/logo.png" alt="Riaya"></div>
+    <div class="login-title"><span data-ar>لوحة التحكم</span><span data-en>Dashboard</span></div>
+    <div class="login-sub"><span data-ar>سجّل دخولك للوصول إلى لوحة التحكم</span><span data-en>Sign in to access the dashboard</span></div>
+    
+    <div class="tabs">
+      <button class="tab act" onclick="showTab('login')"><span data-ar>تسجيل الدخول</span><span data-en>Login</span></button>
+      <button class="tab" onclick="showTab('register')"><span data-ar>إنشاء حساب</span><span data-en>Register</span></button>
+    </div>
+
+    <!-- Login Form -->
+    <div class="form-panel act" id="login-panel">
+      <div class="form-group">
+        <label><span data-ar>اسم المستخدم</span><span data-en>Username</span></label>
+        <input type="text" id="log-user" placeholder="admin" autocomplete="username">
+      </div>
+      <div class="form-group">
+        <label><span data-ar>كلمة المرور</span><span data-en>Password</span></label>
+        <input type="password" id="log-pass" placeholder="••••••••" autocomplete="current-password">
+      </div>
+      <button class="btn-login" onclick="login()"><span data-ar>تسجيل الدخول</span><span data-en>Sign In</span></button>
+    </div>
+
+    <!-- Register Form -->
+    <div class="form-panel" id="register-panel">
+      <div class="form-group">
+        <label><span data-ar>اسم المستخدم</span><span data-en>Username</span></label>
+        <input type="text" id="reg-user" placeholder="admin" autocomplete="username">
+      </div>
+      <div class="form-group">
+        <label><span data-ar>كلمة المرور</span><span data-en>Password</span></label>
+        <input type="password" id="reg-pass" placeholder="••••••••" autocomplete="new-password">
+      </div>
+      <div class="form-group">
+        <label><span data-ar>تأكيد كلمة المرور</span><span data-en>Confirm Password</span></label>
+        <input type="password" id="reg-pass2" placeholder="••••••••" autocomplete="new-password">
+      </div>
+      <button class="btn-login" onclick="register()"><span data-ar>إنشاء الحساب</span><span data-en>Create Account</span></button>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← <span data-ar>العودة للموقع</span><span data-en>Back to Website</span></a>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"><span id="toast-msg">✅</span></div>
+
+<script>
+// Lang/Theme
+let lang=localStorage.getItem('riaya-lang')||'ar';
+let theme=localStorage.getItem('riaya-theme')||'dark';
+function applyLang(){document.documentElement.setAttribute('data-lang',lang);document.documentElement.setAttribute('dir',lang==='ar'?'rtl':'ltr');document.getElementById('lang-btn').textContent=lang==='ar'?'EN':'عر';}
+function applyTheme(){document.documentElement.setAttribute('data-theme',theme);document.getElementById('theme-btn').textContent=theme==='dark'?'🌙':'☀️';}
+function toggleLang(){lang=lang==='ar'?'en':'ar';localStorage.setItem('riaya-lang',lang);applyLang();}
+function toggleTheme(){theme=theme==='dark'?'light':'dark';localStorage.setItem('riaya-theme',theme);applyTheme();}
+applyLang();applyTheme();
+
+// Check if already logged in
+(function(){
+  const a=JSON.parse(localStorage.getItem('riaya-auth')||'null');
+  if(a&&Date.now()-a.time<86400000){location.replace('dashboard.html');return;}
+})();
+
+// Tabs
+function showTab(tab){
+  document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('act',i===(tab==='login'?0:1)));
+  document.getElementById('login-panel').classList.toggle('act',tab==='login');
+  document.getElementById('register-panel').classList.toggle('act',tab==='register');
+}
+
+// Toast
+function toast(msg){const t=document.getElementById('toast');document.getElementById('toast-msg').textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000);}
+
+// Hash
+function hashPw(p){let h=0;for(let i=0;i<p.length;i++){h=((h<<5)-h)+p.charCodeAt(i);h|=0;}return h.toString(36);}
+
+// Login
+function login(){
+  const user=document.getElementById('log-user').value.trim();
+  const pass=document.getElementById('log-pass').value;
+  if(!user||!pass)return toast(lang==='ar'?'⚠️ أدخل جميع البيانات':'⚠️ Fill in all fields');
+  const users=JSON.parse(localStorage.getItem('riaya-users')||'[]');
+  const found=users.find(u=>u.username===user&&u.password===hashPw(pass));
+  if(!found)return toast(lang==='ar'?'⚠️ بيانات الدخول غير صحيحة':'⚠️ Invalid credentials');
+  localStorage.setItem('riaya-auth',JSON.stringify({user:user,time:Date.now()}));
+  location.href='dashboard.html';
+}
+
+// Register
+function register(){
+  const user=document.getElementById('reg-user').value.trim();
+  const pass=document.getElementById('reg-pass').value;
+  const pass2=document.getElementById('reg-pass2').value;
+  if(!user||!pass)return toast(lang==='ar'?'⚠️ أدخل جميع البيانات':'⚠️ Fill in all fields');
+  if(pass!==pass2)return toast(lang==='ar'?'⚠️ كلمة المرور غير متطابقة':'⚠️ Passwords do not match');
+  if(pass.length<4)return toast(lang==='ar'?'⚠️ كلمة المرور قصيرة (4 أحرف على الأقل)':'⚠️ Password too short (min 4 chars)');
+  if(user.length<3)return toast(lang==='ar'?'⚠️ اسم المستخدم قصير':'⚠️ Username too short');
+  const users=JSON.parse(localStorage.getItem('riaya-users')||'[]');
+  if(users.find(u=>u.username===user))return toast(lang==='ar'?'⚠️ اسم المستخدم موجود مسبقاً':'⚠️ Username already exists');
+  users.push({username:user,password:hashPw(pass)});
+  localStorage.setItem('riaya-users',JSON.stringify(users));
+  toast(lang==='ar'?'✅ تم إنشاء الحساب بنجاح!':'✅ Account created successfully!');
+  setTimeout(()=>showTab('login'),1000);
+}
+
+// Enter key
+document.addEventListener('keydown',e=>{
+  if(e.key==='Enter'){
+    if(document.getElementById('login-panel').classList.contains('act'))login();
+    else register();
+  }
+});
+</script>
+</body>
+</html>

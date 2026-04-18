@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-lang="ar" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="رعاية للقوى العاملة - حلول لوجستية ذكية تدعم نمو أعمالك في السعودية | Riaya Workforce - Smart Logistics Solutions in Saudi Arabia">
+<meta name="keywords" content="رعاية, رعاية للقوى العاملة, لوجستيات, قوى عاملة, توظيف, استقدام, السعودية, خدمات لوجستية, logistics, workforce, Saudi Arabia, Riaya, manpower, recruitment">
+<meta name="author" content="Riaya Workforce">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://raya1.site/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://raya1.site/">
+<meta property="og:title" content="رعاية للقوى العاملة | Riaya Workforce">
+<meta property="og:description" content="حلول لوجستية ذكية تدعم نمو أعمالك في السعودية | Smart Logistics Solutions in Saudi Arabia">
+<meta property="og:image" content="https://raya1.site/img/logo.png">
+<meta property="og:locale" content="ar_SA">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="رعاية للقوى العاملة | Riaya Workforce">
+<meta name="twitter:description" content="حلول لوجستية ذكية تدعم نمو أعمالك في السعودية">
+<meta name="twitter:image" content="https://raya1.site/img/logo.png">
+<title>رعاية للقوى العاملة | Riaya Workforce - حلول لوجستية في السعودية</title>
+<link rel="icon" type="image/png" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800&family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "رعاية للقوى العاملة",
+  "alternateName": "Riaya Workforce",
+  "url": "https://raya1.site",
+  "logo": "https://raya1.site/img/logo.png",
+  "description": "حلول لوجستية ذكية تدعم نمو أعمالك في السعودية",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "SA"
+  },
+  "sameAs": []
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "رعاية للقوى العاملة | Riaya Workforce",
+  "url": "https://raya1.site",
+  "inLanguage": ["ar", "en"],
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://raya1.site/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <img src="img/logo.png" class="ld-logo" style="height:68px;width:auto;">
+  <div class="ld-track"><div class="ld-fill"></div></div>
+  <div class="ld-txt" data-ar>جاري التحميل...</div>
+  <div class="ld-txt" data-en>Loading...</div>
+</div>
+
+<!-- CURSOR -->
+<div id="cur-dot"></div>
+<div id="cur-ring"></div>
+
+<!-- NAVBAR -->
+<div id="nav">
+  <div class="nav-logo" onclick="goView('website')">
+    <img src="img/logo.png" alt="Riaya Workforce" style="height:46px;">
+  </div>
+  <div class="nav-links">
+    <span class="nl" onclick="goSec('#about-s')" data-ar>من نحن</span>
+    <span class="nl" onclick="goSec('#about-s')" data-en>About</span>
+    <span class="nl" onclick="goSec('#svc-s')" data-ar>خدماتنا</span>
+    <span class="nl" onclick="goSec('#svc-s')" data-en>Services</span>
+    <span class="nl" onclick="goSec('#roles-s')" data-ar>كوادرنا</span>
+    <span class="nl" onclick="goSec('#roles-s')" data-en>Workforce</span>
+    <span class="nl" onclick="goSec('#prj-s')" data-ar>مشاريعنا</span>
+    <span class="nl" onclick="goSec('#prj-s')" data-en>Projects</span>
+    <span class="nl" onclick="goSec('#news-s')" data-ar>أخبارنا</span>
+    <span class="nl" onclick="goSec('#news-s')" data-en>News</span>
+    <span class="nl" onclick="goSec('#team-s')" data-ar>فريقنا</span>
+    <span class="nl" onclick="goSec('#team-s')" data-en>Team</span>
+    <span class="nl" onclick="goSec('#jobs-s')" data-ar>وظائف</span>
+    <span class="nl" onclick="goSec('#jobs-s')" data-en>Jobs</span>
+    <span class="nl" onclick="goSec('#gallery-s')" data-ar>معرض</span>
+    <span class="nl" onclick="goSec('#gallery-s')" data-en>Gallery</span>
+  </div>
+  <div class="nav-actions">
+    <button class="btn-theme" onclick="toggleTheme()" id="theme-btn" title="تغيير الوضع"><i class="fa-solid fa-moon"></i></button>
+    <button class="btn-lang" onclick="toggleLang()" id="lang-btn">EN</button>
+    <button class="btn-cta" onclick="goSec('#contact-s')" data-ar>احصل على عرض</button>
+    <button class="btn-cta" onclick="goSec('#contact-s')" data-en>Get a Quote</button>
+    <button class="btn-menu" id="menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</div>
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mob-nav">
+  <span class="nl" onclick="goSec('#about-s');toggleMenu()" data-ar>من نحن</span>
+  <span class="nl" onclick="goSec('#about-s');toggleMenu()" data-en>About</span>
+  <span class="nl" onclick="goSec('#svc-s');toggleMenu()" data-ar>خدماتنا</span>
+  <span class="nl" onclick="goSec('#svc-s');toggleMenu()" data-en>Services</span>
+  <span class="nl" onclick="goSec('#roles-s');toggleMenu()" data-ar>كوادرنا</span>
+  <span class="nl" onclick="goSec('#roles-s');toggleMenu()" data-en>Workforce</span>
+  <span class="nl" onclick="goSec('#prj-s');toggleMenu()" data-ar>مشاريعنا</span>
+  <span class="nl" onclick="goSec('#prj-s');toggleMenu()" data-en>Projects</span>
+  <span class="nl" onclick="goSec('#jobs-s');toggleMenu()" data-ar>وظائف</span>
+  <span class="nl" onclick="goSec('#jobs-s');toggleMenu()" data-en>Jobs</span>
+</div>
+
+<!-- ===================================================
+     WEBSITE VIEW
+     =================================================== -->
+<div id="website-view" class="view active">
+
+<!-- HERO -->
+<section id="hero-s" style="min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden;">
+  <div class="hero-bg"></div>
+  <div class="hero-mesh"></div>
+  <div id="particles"></div>
+  <div class="hero-orb ho1"></div>
+  <div class="hero-orb ho2"></div>
+  <div class="hero-ring"></div>
+  <div class="hero-wrap">
+    <div>
+      <div class="hero-badge"><span class="bdot"></span><span data-ar>شريكك الموثوق في القوى العاملة</span><span data-en>Your Trusted Workforce Partner</span></div>
+      <h1 class="hero-title">
+        <span class="ln"><span data-ar>حلول <span class="hl">رعاية</span></span><span data-en>Smart <span class="hl">Riaya</span></span></span>
+        <span class="ln"><span data-ar>اللوجستية الذكية</span><span data-en>Logistics Solutions</span></span>
+        <span class="ln"><span data-ar>لنمو أعمالك</span><span data-en>Powering Your Growth</span></span>
+      </h1>
+      <p class="hero-sub"><span data-ar>شركة سعودية متخصصة في إدارة القوى العاملة والخدمات اللوجستية، نقدم حلولاً ذكية وقابلة للتوسع تعزز كفاءتك التشغيلية وتدعم رؤية 2030.</span><span data-en>A Saudi-based company specialized in workforce management and logistics, delivering smart scalable solutions that optimize your operations and support Vision 2030.</span></p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="goSec('#contact-s')"><span data-ar>احصل على عرض مجاني</span><span data-en>Get a Free Quote</span></button>
+        <button class="btn-outline" onclick="goSec('#svc-s')"><span data-ar>اكتشف خدماتنا</span><span data-en>Our Services</span></button>
+      </div>
+      <div class="hero-stats">
+        <div class="hs-item"><div class="hs-val" id="c1">0</div><div class="hs-lbl"><span data-ar>عميل تم خدمته</span><span data-en>Clients Served</span></div></div>
+        <div class="hs-item"><div class="hs-val" id="c2">0</div><div class="hs-lbl"><span data-ar>توصيل شهرياً</span><span data-en>Monthly Deliveries</span></div></div>
+        <div class="hs-item"><div class="hs-val" id="c3">0</div><div class="hs-lbl"><span data-ar>معدل التسليم</span><span data-en>On-Time Rate</span></div></div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hc-main">
+        <div class="hc-head">
+          <div class="hc-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div><div class="hc-tit"><span data-ar>لوحة العمليات المباشرة</span><span data-en>Live Operations Dashboard</span></div><div class="hc-sub"><span data-ar>آخر تحديث: الآن</span><span data-en>Last update: Now</span></div></div>
+          <div class="live-dot"></div>
+        </div>
+        <div class="met-grid">
+          <div class="met-box"><div class="met-val">99.2%</div><div class="met-lbl"><span data-ar>معدل التسليم</span><span data-en>Delivery Rate</span></div><div class="met-chg">▲ 2.1%</div></div>
+          <div class="met-box"><div class="met-val">15K+</div><div class="met-lbl"><span data-ar>عملية شهرياً</span><span data-en>Monthly Ops</span></div><div class="met-chg">▲ 8%</div></div>
+          <div class="met-box"><div class="met-val">500+</div><div class="met-lbl"><span data-ar>عميل نشط</span><span data-en>Active Clients</span></div><div class="met-chg">▲ 12%</div></div>
+          <div class="met-box"><div class="met-val">95%</div><div class="met-lbl"><span data-ar>رضا العملاء</span><span data-en>Satisfaction</span></div><div class="met-chg">▲ 3%</div></div>
+        </div>
+      </div>
+      <div class="mini-row">
+        <div class="mini-box"><div class="mini-ic"><i class="fa-solid fa-truck-fast"></i></div><div class="mini-vl">247</div><div class="mini-lb"><span data-ar>توصيل اليوم</span><span data-en>Today</span></div></div>
+        <div class="mini-box"><div class="mini-ic"><i class="fa-solid fa-users"></i></div><div class="mini-vl">1.2K</div><div class="mini-lb"><span data-ar>موظف نشط</span><span data-en>Staff</span></div></div>
+        <div class="mini-box"><div class="mini-ic"><i class="fa-solid fa-warehouse"></i></div><div class="mini-vl">18</div><div class="mini-lb"><span data-ar>مستودع</span><span data-en>Warehouses</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about-s">
+
+<!-- About Hero -->
+<div class="abt-hero">
+  <div class="abt-hero-bg">
+    <img src="img/WhatsApp%20Image%202026-04-18%20at%2012.39.16%20AM.jpeg" alt="Riaya Workforce Team" class="abt-hero-img"/>
+    <div class="abt-hero-grad"></div>
+  </div>
+  <div class="abt-hero-content rv">
+    <h1 class="abt-hero-title"><span data-ar>شركة رعاية: شريكك الاستراتيجي للنمو والنجاح في المملكة العربية السعودية</span><span data-en>Riaya: Your Strategic Partner for Growth & Success in Saudi Arabia</span></h1>
+    <p class="abt-hero-sub"><span data-ar>نحن في رعاية نمثل الشريك الاستراتيجي الأمثل للشركات في السوق السعودي، نقدم حلولاً لوجستية وتشغيلية متكاملة تدعم التوسع والنمو المستدام في بيئة الأعمال المتطورة.</span><span data-en>At Riaya, we represent the ideal strategic partner for businesses in the Saudi market, delivering integrated logistics and operational solutions that support expansion and sustainable growth.</span></p>
+    <button class="btn-primary abt-cta" onclick="goSec('#svc-s')"><span data-ar>اكتشف خدماتنا</span><span data-en>Explore Our Services</span></button>
+  </div>
+</div>
+
+<!-- Vision & Mission -->
+<div class="abt-vm-sec">
+  <div class="abt-container">
+    <div class="abt-vm-grid">
+      <!-- Vision -->
+      <div class="abt-vm-card rv d1">
+        <div class="abt-vm-accent abt-accent-teal"></div>
+        <div class="abt-vm-icon-wrap abt-icon-teal"><i class="fa-solid fa-eye"></i></div>
+        <h2 class="abt-vm-title"><span data-ar>رؤيتنا</span><span data-en>Our Vision</span></h2>
+        <p class="abt-vm-txt"><span data-ar>أن نكون الرواد في تقديم حلول لوجستية وتشغيلية متكاملة ومستدامة، تعزز تنافسية الشركات وتساهم في بناء مستقبل مشرق للمملكة وفق رؤية 2030.</span><span data-en>To be pioneers in delivering integrated, sustainable logistics and operational solutions that enhance business competitiveness and contribute to building the Kingdom's bright future aligned with Vision 2030.</span></p>
+      </div>
+      <!-- Mission -->
+      <div class="abt-vm-card rv d2">
+        <div class="abt-vm-accent abt-accent-or"></div>
+        <div class="abt-vm-icon-wrap abt-icon-or"><i class="fa-solid fa-rocket"></i></div>
+        <h2 class="abt-vm-title"><span data-ar>رسالتنا</span><span data-en>Our Mission</span></h2>
+        <p class="abt-vm-txt"><span data-ar>تمكين الشركات السعودية من تحقيق أعلى مستويات الأداء التشغيلي من خلال تقديم حلول لوجستية وإدارة قوى عاملة بمعايير عالمية، تعتمد على التكنولوجيا المتقدمة والكوادر البشرية المؤهلة.</span><span data-en>Empowering Saudi businesses to achieve peak operational performance through world-class logistics and workforce management solutions, powered by advanced technology and qualified human resources.</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Values Bento -->
+<div class="abt-vals-sec">
+  <div class="abt-container">
+    <div class="abt-sec-hd rv">
+      <h2 class="abt-sec-title"><span data-ar>القيم الأساسية</span><span data-en>Core Values</span></h2>
+      <p class="abt-sec-sub"><span data-ar>المبادئ التي تقود عملياتنا وتحدد مسارنا نحو التميز.</span><span data-en>The principles that drive our operations and define our path to excellence.</span></p>
+    </div>
+    <div class="abt-vals-grid">
+      <div class="abt-val-card rv d1">
+        <div class="abt-val-head"><span class="abt-val-ic"><i class="fa-solid fa-shield-halved"></i></span><h3 class="abt-val-tit"><span data-ar>الموثوقية</span><span data-en>Reliability</span></h3></div>
+        <p class="abt-val-txt"><span data-ar>نلتزم بتقديم خدماتنا بأعلى درجات الموثوقية والدقة، لضمان رضا عملائنا وبناء علاقات طويلة الأمد معهم.</span><span data-en>We commit to delivering services with the highest reliability, ensuring client satisfaction and long-term partnerships.</span></p>
+      </div>
+      <div class="abt-val-card rv d2">
+        <div class="abt-val-head"><span class="abt-val-ic"><i class="fa-solid fa-lightbulb"></i></span><h3 class="abt-val-tit"><span data-ar>الابتكار</span><span data-en>Innovation</span></h3></div>
+        <p class="abt-val-txt"><span data-ar>نسعى باستمرار إلى تطوير حلولنا وتبني أحدث التقنيات في مجال الخدمات اللوجستية وإدارة القوى العاملة.</span><span data-en>We continuously develop solutions and adopt the latest technologies in logistics and workforce management.</span></p>
+      </div>
+      <div class="abt-val-card rv d3">
+        <div class="abt-val-head"><span class="abt-val-ic"><i class="fa-solid fa-bolt"></i></span><h3 class="abt-val-tit"><span data-ar>الكفاءة</span><span data-en>Efficiency</span></h3></div>
+        <p class="abt-val-txt"><span data-ar>نحرص على تقديم حلولنا بأعلى درجات الكفاءة والفعالية، لتقليل التكاليف وزيادة الإنتاجية لعملائنا.</span><span data-en>Maximum efficiency and effectiveness to reduce costs and boost productivity for our clients.</span></p>
+      </div>
+      <div class="abt-val-card abt-val-wide rv d4">
+        <div class="abt-val-head"><span class="abt-val-ic"><i class="fa-solid fa-seedling"></i></span><h3 class="abt-val-tit"><span data-ar>الاستدامة</span><span data-en>Sustainability</span></h3></div>
+        <p class="abt-val-txt"><span data-ar>نلتزم بتقديم حلول مستدامة تحافظ على البيئة وتساهم في بناء مستقبل أفضل للأجيال القادمة.</span><span data-en>Sustainable solutions that protect the environment and build a better future for generations to come.</span></p>
+      </div>
+      <div class="abt-val-card rv d5">
+        <div class="abt-val-head"><span class="abt-val-ic"><i class="fa-solid fa-magnifying-glass"></i></span><h3 class="abt-val-tit"><span data-ar>الشفافية</span><span data-en>Transparency</span></h3></div>
+        <p class="abt-val-txt"><span data-ar>نعتمد الشفافية والوضوح في كافة تعاملاتنا مع عملائنا، لضمان بناء جسور الثقة والمصداقية.</span><span data-en>Full transparency in all our dealings, building bridges of trust and credibility with our clients.</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Why Choose Riaya -->
+<div class="abt-why-sec">
+  <div class="abt-why-radial"></div>
+  <div class="abt-container" style="position:relative;z-index:2;">
+    <div class="abt-sec-hd rv">
+      <h2 class="abt-sec-title"><span data-ar>لماذا تختار رعاية؟</span><span data-en>Why Choose Riaya?</span></h2>
+      <div class="abt-divider"></div>
+    </div>
+    <div class="abt-why-grid">
+      <div class="abt-why-card rv d1">
+        <div class="abt-why-icon-box"><i class="fa-solid fa-globe"></i></div>
+        <h3 class="abt-why-tit"><span data-ar>خبرة واسعة في السوق السعودي</span><span data-en>Deep Saudi Market Expertise</span></h3>
+        <p class="abt-why-txt"><span data-ar>فهم عميق لتحديات ومتطلبات السوق المحلي مما يتيح تقديم حلول مخصصة تناسب احتياجاتك.</span><span data-en>Deep understanding of local market challenges enabling customized solutions for your needs.</span></p>
+      </div>
+      <div class="abt-why-card rv d2">
+        <div class="abt-why-icon-box"><i class="fa-solid fa-gears"></i></div>
+        <h3 class="abt-why-tit"><span data-ar>حلول مبتكرة وتكنولوجيا متقدمة</span><span data-en>Innovative Solutions & Advanced Tech</span></h3>
+        <p class="abt-why-txt"><span data-ar>استخدام أحدث التقنيات لتحسين الكفاءة اللوجستية وإدارة القوى العاملة.</span><span data-en>Leveraging cutting-edge technology to enhance logistics and workforce management efficiency.</span></p>
+      </div>
+      <div class="abt-why-card rv d3">
+        <div class="abt-why-icon-box"><i class="fa-solid fa-user-group"></i></div>
+        <h3 class="abt-why-tit"><span data-ar>كوادر بشرية مؤهلة</span><span data-en>Qualified Human Capital</span></h3>
+        <p class="abt-why-txt"><span data-ar>فرق عمل مدربة ومحترفة لضمان أعلى مستويات الأداء والخدمة.</span><span data-en>Trained, professional teams ensuring the highest levels of performance and service.</span></p>
+      </div>
+      <div class="abt-why-card rv d4">
+        <div class="abt-why-icon-box"><i class="fa-solid fa-circle-check"></i></div>
+        <h3 class="abt-why-tit"><span data-ar>التزام بالجودة والمعايير العالمية</span><span data-en>Global Quality Standards</span></h3>
+        <p class="abt-why-txt"><span data-ar>تطبيق صارم لمعايير الجودة في جميع خدماتنا لتحقيق أهدافك التجارية.</span><span data-en>Strict adherence to quality standards across all services to achieve your business goals.</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+<!-- SERVICES -->
+<section id="svc-s" style="position:relative;overflow:hidden;">
+<div style="position:absolute;inset:0;background:url('img/WhatsApp%20Image%202026-04-18%20at%2012.18.38%20AM.jpeg') center center/cover no-repeat;"></div>
+<div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(6,14,28,.88) 0%,rgba(10,22,40,.82) 50%,rgba(15,31,56,.85) 100%);"></div>
+<div class="sec" style="position:relative;z-index:2;">
+  <div class="sec-hd rv">
+    <div class="sec-badge">✦ <span data-ar>خدماتنا</span><span data-en>Services</span></div>
+    <h2 class="sec-title"><span data-ar>خدمات متكاملة <span class="hl">لسلسلة الإمداد</span></span><span data-en>Integrated <span class="hl">Supply Chain</span> Services</span></h2>
+    <p class="sec-sub"><span data-ar>نقدم مجموعة شاملة من الخدمات اللوجستية المتكاملة التي تغطي جميع جوانب سلسلة الإمداد.</span><span data-en>We provide comprehensive integrated logistics services covering all aspects of the supply chain.</span></p>
+  </div>
+  <div class="svc-grid" id="svc-display"></div>
+</div>
+</section>
+
+<!-- WHY US -->
+<section style="background:var(--bg2);padding:1px 0;">
+
+<!-- WORKFORCE ROLES -->
+<section id="roles-s">
+<div class="sec">
+  <div class="sec-hd rv">
+    <h2 class="sec-title"><span data-ar>كوادرنا <span class="hl">المتخصصة</span></span><span data-en>Our Specialized <span class="hl">Workforce</span></span></h2>
+    <p class="sec-sub"><span data-ar>نحن نوفر قوة عاملة مدربة ومؤهلة لتلبية كافة احتياجات عملياتك اللوجستية، بمرونة وكفاءة عالية لضمان استمرارية أعمالك.</span><span data-en>We provide trained and qualified workforce to meet all your logistics operational needs, with flexibility and high efficiency to ensure your business continuity.</span></p>
+  </div>
+
+  <div class="roles-bento">
+
+    <!-- 1. Logistics Operations — full width -->
+    <div class="glass-sec glass-wide rv d1">
+      <div class="glass-glow glass-glow-or"></div>
+      <div class="glass-hd">
+        <div class="glass-ic glass-ic-or"><i class="fa-solid fa-boxes-stacked"></i></div>
+        <div>
+          <h3 class="glass-tit"><span data-ar>العمليات اللوجستية</span><span data-en>Logistics Operations</span></h3>
+          <span class="glass-sub">Logistics Operations</span>
+        </div>
+      </div>
+      <div class="job-grid job-grid-3">
+        <div class="job-item"><div class="job-main"><span class="job-name"><span data-ar>عامل تحميل وتنزيل</span><span data-en>Loader / Unloader</span></span></div><span class="job-en">Loader / Unloader</span></div>
+        <div class="job-item"><div class="job-main"><span class="job-name"><span data-ar>بيكر (جامع طلبات)</span><span data-en>Picker</span></span></div><span class="job-en">Picker</span></div>
+        <div class="job-item"><div class="job-main"><span class="job-name"><span data-ar>باكر (تعبئة وتغليف)</span><span data-en>Packer</span></span></div><span class="job-en">Packer</span></div>
+        <div class="job-item"><div class="job-main"><span class="job-name"><span data-ar>سورتر (فرز)</span><span data-en>Sorter</span></span></div><span class="job-en">Sorter</span></div>
+        <div class="job-item"><div class="job-main"><span class="job-name"><span data-ar>فرونت لاين ليبر</span><span data-en>Frontline Labor</span></span></div><span class="job-en">Frontline Labor</span></div>
+        <div class="job-item"><div class="job-main"><span class="job-name"><span data-ar>عامل مستودع</span><span data-en>Warehouse Worker</span></span></div><span class="job-en">Warehouse Worker</span></div>
+        <div class="job-item"><div class="job-main"><span class="job-name"><span data-ar>مساعد مستودع</span><span data-en>Warehouse Assistant</span></span></div><span class="job-en">Warehouse Assistant</span></div>
+        <div class="job-item"><div class="job-main"><span class="job-name"><span data-ar>مراقب تحميل</span><span data-en>Loading Supervisor</span></span></div><span class="job-en">Loading Supervisor</span></div>
+        <div class="job-item"><div class="job-main"><span class="job-name"><span data-ar>مراقب وردية</span><span data-en>Shift Supervisor</span></span></div><span class="job-en">Shift Supervisor</span></div>
+        <div class="job-item job-item-hl"><div class="job-main"><span class="job-name"><span data-ar>مشرف عمليات</span><span data-en>Operations Supervisor</span></span></div><span class="job-en">Supervisor</span></div>
+        <div class="job-item job-item-hl"><div class="job-main"><span class="job-name"><span data-ar>مدير عمليات</span><span data-en>Operations Manager</span></span></div><span class="job-en">Manager</span></div>
+      </div>
+    </div>
+
+    <!-- 2. Warehouse — half width -->
+    <div class="glass-sec rv d2">
+      <div class="glass-glow glass-glow-bl"></div>
+      <div class="glass-hd">
+        <div class="glass-ic glass-ic-bl"><i class="fa-solid fa-warehouse"></i></div>
+        <div>
+          <h3 class="glass-tit"><span data-ar>وظائف المخازن</span><span data-en>Warehouse Jobs</span></h3>
+          <span class="glass-sub">Warehouse Jobs</span>
+        </div>
+      </div>
+      <div class="job-col">
+        <div class="job-row"><div class="job-dot job-dot-or"></div><div class="job-row-info"><span class="job-name"><span data-ar>أمين مخزن</span><span data-en>Storekeeper</span></span><span class="job-en">Storekeeper</span></div></div>
+        <div class="job-row"><div class="job-dot job-dot-tl"></div><div class="job-row-info"><span class="job-name"><span data-ar>مشرف مخزن</span><span data-en>Warehouse Supervisor</span></span><span class="job-en">Supervisor</span></div></div>
+        <div class="job-row"><div class="job-dot job-dot-tl"></div><div class="job-row-info"><span class="job-name"><span data-ar>مدير مخزن</span><span data-en>Warehouse Manager</span></span><span class="job-en">Manager</span></div></div>
+        <div class="job-row"><div class="job-dot job-dot-or"></div><div class="job-row-info"><span class="job-name"><span data-ar>مراقب مخزون</span><span data-en>Inventory Controller</span></span><span class="job-en">Inventory Controller</span></div></div>
+        <div class="job-row"><div class="job-dot job-dot-bl"></div><div class="job-row-info"><span class="job-name"><span data-ar>مدخل بيانات مخزون</span><span data-en>Inventory Data Entry</span></span><span class="job-en">Data Entry</span></div></div>
+        <div class="job-row"><div class="job-dot job-dot-or"></div><div class="job-row-info"><span class="job-name"><span data-ar>مسؤول جرد</span><span data-en>Stock Controller</span></span><span class="job-en">Stock Controller</span></div></div>
+      </div>
+    </div>
+
+    <!-- 3. Transportation — half width -->
+    <div class="glass-sec rv d3">
+      <div class="glass-glow glass-glow-tl"></div>
+      <div class="glass-hd">
+        <div class="glass-ic glass-ic-tl"><i class="fa-solid fa-truck"></i></div>
+        <div>
+          <h3 class="glass-tit"><span data-ar>النقل والتوصيل</span><span data-en>Transportation</span></h3>
+          <span class="glass-sub">Transportation</span>
+        </div>
+      </div>
+      <div class="job-col">
+        <div class="job-row"><div class="job-dot job-dot-or"></div><div class="job-row-info"><span class="job-name"><span data-ar>سائق نقل خفيف</span><span data-en>Light Driver</span></span><span class="job-en">Light Driver</span></div></div>
+        <div class="job-row"><div class="job-dot job-dot-or"></div><div class="job-row-info"><span class="job-name"><span data-ar>سائق نقل ثقيل</span><span data-en>Heavy Truck Driver</span></span><span class="job-en">Heavy Driver</span></div></div>
+        <div class="job-row"><div class="job-dot job-dot-or"></div><div class="job-row-info"><span class="job-name"><span data-ar>سائق توصيل</span><span data-en>Delivery Driver</span></span><span class="job-en">Delivery Driver</span></div></div>
+        <div class="job-row"><div class="job-dot job-dot-bl"></div><div class="job-row-info"><span class="job-name"><span data-ar>سائق رافعة شوكية</span><span data-en>Forklift Operator</span></span><span class="job-en">Forklift Operator</span></div></div>
+        <div class="job-row"><div class="job-dot job-dot-bl"></div><div class="job-row-info"><span class="job-name"><span data-ar>مشغل ريتش تراك</span><span data-en>Reach Truck Operator</span></span><span class="job-en">Reach Truck Operator</span></div></div>
+        <div class="job-row"><div class="job-dot job-dot-tl"></div><div class="job-row-info"><span class="job-name"><span data-ar>منسق نقل</span><span data-en>Transport Coordinator</span></span><span class="job-en">Coordinator</span></div></div>
+        <div class="job-row"><div class="job-dot job-dot-tl"></div><div class="job-row-info"><span class="job-name"><span data-ar>مشرف أسطول</span><span data-en>Fleet Supervisor</span></span><span class="job-en">Fleet Supervisor</span></div></div>
+        <div class="job-row"><div class="job-dot job-dot-tl"></div><div class="job-row-info"><span class="job-name"><span data-ar>مدير أسطول</span><span data-en>Fleet Manager</span></span><span class="job-en">Fleet Manager</span></div></div>
+      </div>
+    </div>
+
+    <!-- 4. Admin & Support — full width -->
+    <div class="glass-sec glass-wide rv d4">
+      <div class="glass-glow glass-glow-bl" style="bottom:0;right:0;top:auto;left:auto;"></div>
+      <div class="glass-hd">
+        <div class="glass-ic glass-ic-bl"><i class="fa-solid fa-briefcase"></i></div>
+        <div>
+          <h3 class="glass-tit"><span data-ar>الإدارة والدعم</span><span data-en>Admin & Support</span></h3>
+          <span class="glass-sub">Admin & Support</span>
+        </div>
+      </div>
+      <div class="job-grid job-grid-4">
+        <div class="job-item"><div class="job-main"><span class="job-name"><span data-ar>إداري</span><span data-en>Admin</span></span></div><span class="job-en">Admin</span></div>
+        <div class="job-item job-item-hl2"><div class="job-main"><span class="job-name"><span data-ar>منسق عمليات</span><span data-en>Operations Coordinator</span></span></div><span class="job-en">Operations Coordinator</span></div>
+        <div class="job-item"><div class="job-main"><span class="job-name"><span data-ar>خدمة عملاء</span><span data-en>Customer Service</span></span></div><span class="job-en">Customer Service</span></div>
+        <div class="job-item"><div class="job-main"><span class="job-name"><span data-ar>مدخل بيانات</span><span data-en>Data Entry</span></span></div><span class="job-en">Data Entry</span></div>
+        <div class="job-item"><div class="job-main"><span class="job-name"><span data-ar>محاسب</span><span data-en>Accountant</span></span></div><span class="job-en">Accountant</span></div>
+        <div class="job-item job-item-hl2"><div class="job-main"><span class="job-name"><span data-ar>مسؤول موارد بشرية</span><span data-en>HR Officer</span></span></div><span class="job-en">HR</span></div>
+        <div class="job-item"><div class="job-main"><span class="job-name"><span data-ar>مسؤول رواتب</span><span data-en>Payroll Officer</span></span></div><span class="job-en">Payroll</span></div>
+        <div class="job-item job-item-hl2"><div class="job-main"><span class="job-name"><span data-ar>مسؤول توظيف</span><span data-en>Recruiter</span></span></div><span class="job-en">Recruiter</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="roles-cta rv">
+    <h3><span data-ar>هل تبحث عن كوادر متخصصة لعملياتك؟</span><span data-en>Looking for specialized workforce for your operations?</span></h3>
+    <p><span data-ar>فريقنا جاهز لتزويدك بأفضل الكفاءات لدعم نمو أعمالك اللوجستية والارتقاء بمستوى خدماتك.</span><span data-en>Our team is ready to provide you with the best talent to support your logistics growth and elevate your services.</span></p>
+    <button class="btn-primary" onclick="goSec('#contact-s')"><span data-ar>اطلب كوادرك الآن ←</span><span data-en>Request Your Workforce →</span></button>
+  </div>
+
+</div>
+</section>
+
+<!-- WHY US -->
+<section style="background:var(--bg2);padding:1px 0;">
+<div class="sec">
+  <div class="sec-hd rv">
+    <div class="sec-badge">✦ <span data-ar>لماذا رعاية</span><span data-en>Why Riaya</span></div>
+    <h2 class="sec-title"><span data-ar>لماذا تختار <span class="hl">رعاية</span></span><span data-en>Why Choose <span class="hl">Riaya</span></span></h2>
+    <p class="sec-sub"><span data-ar>نقدم حلولاً متميزة تجمع بين السرعة والموثوقية والكفاءة، مع التزام كامل بمعايير الجودة والسلامة.</span><span data-en>We offer distinctive solutions combining speed, reliability, and efficiency, with full commitment to quality and safety standards.</span></p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card rv d1"><div class="why-ic"><i class="fa-solid fa-bolt"></i></div><div><div class="why-tit"><span data-ar>السرعة</span><span data-en>Speed</span></div><div class="why-txt"><span data-ar>خيارات توصيل في نفس اليوم أو اليوم التالي</span><span data-en>Same-day and next-day delivery options</span></div></div></div>
+    <div class="why-card rv d2"><div class="why-ic"><i class="fa-solid fa-shield-halved"></i></div><div><div class="why-tit"><span data-ar>الموثوقية</span><span data-en>Reliability</span></div><div class="why-txt"><span data-ar>معدل التزام يتجاوز 99% مع شفافية كاملة</span><span data-en>Over 99% commitment rate with complete transparency</span></div></div></div>
+    <div class="why-card rv d3"><div class="why-ic">🇸🇦</div><div><div class="why-tit"><span data-ar>الكوادر الوطنية</span><span data-en>Local Expertise</span></div><div class="why-txt"><span data-ar>فرق عمل سعودية مؤهلة ومتوافقة مع رؤية 2030</span><span data-en>Qualified Saudi workforce aligned with Vision 2030</span></div></div></div>
+    <div class="why-card rv d4"><div class="why-ic"><i class="fa-solid fa-chart-line"></i></div><div><div class="why-tit"><span data-ar>الحلول المرنة</span><span data-en>Scalability</span></div><div class="why-txt"><span data-ar>خدمات قابلة للتوسع تنمو مع نمو أعمالك</span><span data-en>Flexible solutions that grow with your business</span></div></div></div>
+  </div>
+</div>
+</section>
+
+<!-- HOW WE WORK -->
+<section style="padding:1px 0;">
+<div class="sec">
+  <div class="sec-hd rv">
+    <div class="sec-badge">✦ <span data-ar>كيف نعمل</span><span data-en>How We Work</span></div>
+    <h2 class="sec-title"><span data-ar>منهجيتنا <span class="hl">في التنفيذ</span></span><span data-en>Our <span class="hl">Methodology</span></span></h2>
+  </div>
+  <div class="how-steps">
+    <div class="step-card rv d1"><div class="step-num">01</div><div class="step-tit"><span data-ar>التخطيط والتنسيق</span><span data-en>Planning & Coordination</span></div><div class="step-txt"><span data-ar>نحلل احتياجاتك بدقة ونصمم حلاً مخصصاً لعملياتك.</span><span data-en>We precisely analyze your needs and design a customized solution.</span></div><ul class="step-list"><li><span data-ar>تحليل احتياجات العميل بدقة</span><span data-en>Precise client needs analysis</span></li><li><span data-ar>تصميم حل مخصص</span><span data-en>Customized solution design</span></li><li><span data-ar>تحديد أفضل المسارات</span><span data-en>Optimal route planning</span></li></ul></div>
+    <div class="step-card rv d2"><div class="step-num">02</div><div class="step-tit"><span data-ar>التنفيذ والمراقبة</span><span data-en>Execution & Monitoring</span></div><div class="step-txt"><span data-ar>ننفذ العمليات بمعايير عالية مع مراقبة مستمرة وتتبع لحظي.</span><span data-en>We execute operations with high standards and continuous real-time monitoring.</span></div><ul class="step-list"><li><span data-ar>تنفيذ بمعايير عالية</span><span data-en>High-standard execution</span></li><li><span data-ar>مراقبة مستمرة وتتبع لحظي</span><span data-en>Continuous real-time tracking</span></li></ul></div>
+    <div class="step-card rv d3"><div class="step-num">03</div><div class="step-tit"><span data-ar>التقارير والتحسين</span><span data-en>Reporting & Improvement</span></div><div class="step-txt"><span data-ar>نقدم تقارير دورية وتحسين مستمر للوصول لأعلى مستوى.</span><span data-en>We deliver periodic reports and continuous improvement for peak performance.</span></div><ul class="step-list"><li><span data-ar>تقارير دورية شاملة</span><span data-en>Comprehensive periodic reports</span></li><li><span data-ar>تحسين مستمر للعمليات</span><span data-en>Continuous process improvement</span></li></ul></div>
+  </div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="prj-s" style="background:var(--bg2);padding:1px 0;">
+<div class="sec">
+  <div class="sec-hd rv">
+    <div class="sec-badge">✦ <span data-ar>مشاريعنا</span><span data-en>Projects</span></div>
+    <h2 class="sec-title"><span data-ar>آخر <span class="hl">مشاريعنا</span></span><span data-en>Our Latest <span class="hl">Projects</span></span></h2>
+  </div>
+  <div class="prj-grid" id="prj-display"></div>
+</div>
+</section>
+
+<!-- NEWS -->
+<section id="news-s">
+<div class="sec">
+  <div class="sec-hd rv">
+    <div class="sec-badge">✦ <span data-ar>أخبارنا</span><span data-en>News</span></div>
+    <h2 class="sec-title"><span data-ar>آخر <span class="hl">أخبارنا</span></span><span data-en>Latest <span class="hl">News</span></span></h2>
+  </div>
+  <div class="news-grid" id="news-display"></div>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery-s" style="background:var(--bg2);padding:1px 0;">
+<div class="sec">
+  <div class="sec-hd rv">
+    <div class="sec-badge">✦ <span data-ar>معرض الصور</span><span data-en>Gallery</span></div>
+    <h2 class="sec-title"><span data-ar>معرض <span class="hl">أعمالنا</span></span><span data-en>Our <span class="hl">Gallery</span></span></h2>
+  </div>
+  <div class="gallery-filter">
+    <button class="gf-btn act" onclick="filterGal('all',this)"><span data-ar>الكل</span><span data-en>All</span></button>
+    <button class="gf-btn" onclick="filterGal('warehouse',this)"><span data-ar>مستودعات</span><span data-en>Warehouses</span></button>
+    <button class="gf-btn" onclick="filterGal('delivery',this)"><span data-ar>توصيل</span><span data-en>Delivery</span></button>
+    <button class="gf-btn" onclick="filterGal('team',this)"><span data-ar>فريق العمل</span><span data-en>Team</span></button>
+  </div>
+  <div class="gallery-grid" id="gallery-display"></div>
+</div>
+</section>
+
+<!-- TEAM -->
+<section id="team-s">
+<div class="sec">
+  <div class="sec-hd rv">
+    <div class="sec-badge">✦ <span data-ar>فريقنا</span><span data-en>Our Team</span></div>
+    <h2 class="sec-title"><span data-ar>فريق <span class="hl">رعاية</span></span><span data-en><span class="hl">Riaya</span> Team</span></h2>
+    <p class="sec-sub"><span data-ar>نخبة من المتخصصين المدربين بعناية لتقديم خدمات لوجستية عالية الجودة.</span><span data-en>Elite specialists carefully trained to deliver high-quality logistics services.</span></p>
+  </div>
+  <div class="team-grid" id="team-display"></div>
+</div>
+</section>
+
+<!-- JOBS -->
+<section id="jobs-s" style="background:var(--bg2);padding:1px 0;">
+<div class="sec">
+  <div class="sec-hd rv">
+    <div class="sec-badge">✦ <span data-ar>وظائف</span><span data-en>Careers</span></div>
+    <h2 class="sec-title"><span data-ar>انضم إلى <span class="hl">فريقنا</span></span><span data-en>Join Our <span class="hl">Team</span></span></h2>
+    <p class="sec-sub"><span data-ar>نبحث دائماً عن كفاءات وطنية متميزة للانضمام إلى عائلة رعاية.</span><span data-en>We are always looking for exceptional talent to join the Riaya family.</span></p>
+  </div>
+  <div class="jobs-list" id="jobs-display"></div>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section style="background:var(--bg2);padding:1px 0;">
+<div class="sec">
+  <div class="sec-hd rv">
+    <div class="sec-badge">✦ <span data-ar>آراء عملاؤنا</span><span data-en>Testimonials</span></div>
+    <h2 class="sec-title"><span data-ar>ماذا يقول <span class="hl">عملاؤنا</span></span><span data-en>What Our <span class="hl">Clients Say</span></span></h2>
+  </div>
+  <div class="test-slider" id="test-display"></div>
+</div>
+</section>
+
+<!-- PARTNERS -->
+<section id="ptn-s">
+<div class="sec">
+  <div class="sec-hd rv">
+    <div class="sec-badge">✦ <span data-ar>شركاؤنا</span><span data-en>Partners</span></div>
+    <h2 class="sec-title"><span data-ar>شركاء <span class="hl">النجاح</span></span><span data-en>Partners in <span class="hl">Success</span></span></h2>
+  </div>
+  <div class="ptn-grid" id="ptn-display"></div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact-s" style="background:var(--bg2);padding:1px 0;">
+<div class="sec">
+  <div class="sec-hd rv">
+    <div class="sec-badge">✦ <span data-ar>تواصل معنا</span><span data-en>Contact Us</span></div>
+    <h2 class="sec-title"><span data-ar>جاهزون <span class="hl">لخدمتك</span></span><span data-en>Ready to <span class="hl">Serve You</span></span></h2>
+    <p class="sec-sub"><span data-ar>تواصل معنا اليوم واطلب عرضك المجاني.</span><span data-en>Contact us today for your free quote.</span></p>
+  </div>
+  <div class="contact-wrap">
+    <div class="cinfo rv-l" id="contact-info-display">
+      <div class="ci-item"><div class="ci-ic"><i class="fa-solid fa-phone"></i></div><div><div class="ci-lbl"><span data-ar>الهاتف</span><span data-en>Phone</span></div><div class="ci-val">+966558619232</div></div></div>
+      <div class="ci-item"><div class="ci-ic"><i class="fa-brands fa-whatsapp"></i></div><div><div class="ci-lbl">WhatsApp</div><div class="ci-val">+966558619232</div></div></div>
+      <div class="ci-item"><div class="ci-ic"><i class="fa-solid fa-envelope"></i></div><div><div class="ci-lbl">Email</div><div class="ci-val">info@raya1.site</div></div></div>
+      <div class="ci-item"><div class="ci-ic"><i class="fa-solid fa-globe"></i></div><div><div class="ci-lbl"><span data-ar>الموقع</span><span data-en>Website</span></div><div class="ci-val"><a href="https://raya1.site/" target="_blank" style="color:inherit;text-decoration:none;">raya1.site</a></div></div></div>
+      <div class="ci-item"><div class="ci-ic"><i class="fa-solid fa-location-dot"></i></div><div><div class="ci-lbl"><span data-ar>الموقع الجغرافي</span><span data-en>Location</span></div><div class="ci-val"><span data-ar>الرياض، المملكة العربية السعودية</span><span data-en>Riyadh, Saudi Arabia</span></div></div></div>
+      <div id="social-display" class="social-display" style="display:flex;gap:10px;margin-top:16px;"></div>
+    </div>
+    <div class="cfm rv-r">
+      <div class="cfm-tit"><span data-ar>أرسل لنا رسالة ✉️</span><span data-en>Send Us a Message ✉️</span></div>
+      <div class="fg">
+        <div class="f-grp"><label><span data-ar>الاسم الكامل</span><span data-en>Full Name</span></label><input type="text" id="cf-name" placeholder="..."></div>
+        <div class="f-grp"><label><span data-ar>رقم الجوال</span><span data-en>Mobile</span></label><input type="tel" id="cf-phone" placeholder="05XXXXXXXX"></div>
+        <div class="f-grp"><label>Email</label><input type="email" id="cf-email" placeholder="example@company.com"></div>
+        <div class="f-grp"><label><span data-ar>الخدمة المطلوبة</span><span data-en>Service Needed</span></label>
+          <select id="cf-svc">
+            <option data-ar value="">اختر الخدمة</option><option data-en value="">Select Service</option>
+            <option value="transport"><span data-ar>النقل واللوجستيات</span><span data-en>Transportation & Logistics</span></option>
+            <option value="warehouse"><span data-ar>إدارة المستودعات</span><span data-en>Warehouse Management</span></option>
+            <option value="delivery"><span data-ar>التوصيل للمرحلة الأخيرة</span><span data-en>Last-Mile Delivery</span></option>
+            <option value="workforce"><span data-ar>إدارة القوى العاملة</span><span data-en>Workforce Management</span></option>
+          </select>
+        </div>
+        <div class="f-grp full"><label><span data-ar>رسالتك</span><span data-en>Message</span></label><textarea id="cf-msg" placeholder="..."></textarea></div>
+      </div>
+      <div class="f-actions"><button class="btn-primary" onclick="submitForm()"><span data-ar>إرسال الرسالة</span><span data-en>Send Message</span></button></div>
+      <div class="auto-reply" id="auto-reply">
+        <p>✅ <span data-ar>شكراً! تم استلام رسالتك. سيتواصل معك فريقنا خلال 24 ساعة عمل. رقم طلبك: #RY-<span id="ticket-num"></span></span><span data-en>Thank you! Your message has been received. Our team will contact you within 24 business hours. Ticket: #RY-<span id="ticket-num2"></span></span></p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-inner">
+    <div class="ft-grid">
+      <div class="ft-col">
+        <img src="img/logo.png" style="height:50px;width:auto;margin-bottom:14px;display:block;filter:drop-shadow(0 2px 8px rgba(255,107,26,.3));">
+        <p><span data-ar>شركة سعودية متخصصة في الخدمات اللوجستية وإدارة القوى العاملة.</span><span data-en>A Saudi company specialized in logistics and workforce management services.</span></p>
+      </div>
+      <div class="ft-col">
+        <h4><span data-ar>خدماتنا</span><span data-en>Services</span></h4>
+        <a onclick="goSec('#svc-s')"><span data-ar>النقل واللوجستيات</span><span data-en>Transportation</span></a>
+        <a onclick="goSec('#svc-s')"><span data-ar>إدارة المستودعات</span><span data-en>Warehouse Mgmt</span></a>
+        <a onclick="goSec('#svc-s')"><span data-ar>التوصيل الأخير</span><span data-en>Last-Mile Delivery</span></a>
+        <a onclick="goSec('#svc-s')"><span data-ar>القوى العاملة</span><span data-en>Workforce Mgmt</span></a>
+      </div>
+      <div class="ft-col">
+        <h4><span data-ar>الشركة</span><span data-en>Company</span></h4>
+        <a onclick="goSec('#about-s')"><span data-ar>من نحن</span><span data-en>About Us</span></a>
+        <a onclick="goSec('#prj-s')"><span data-ar>مشاريعنا</span><span data-en>Projects</span></a>
+        <a onclick="goSec('#team-s')"><span data-ar>فريقنا</span><span data-en>Our Team</span></a>
+        <a onclick="goSec('#jobs-s')"><span data-ar>وظائف</span><span data-en>Careers</span></a>
+      </div>
+      <div class="ft-col">
+        <h4><span data-ar>تواصل معنا</span><span data-en>Contact</span></h4>
+        <p id="ft-phone">📞 +966558619232</p>
+        <p id="ft-email">📧 info@raya1.site</p>
+        <p id="ft-website"><span style="display:inline-flex;align-items:center;gap:6px;">🌐 <a href="https://raya1.site/" target="_blank" style="color:inherit;text-decoration:none;">raya1.site</a></span></p>
+        <p>📍 <span data-ar>الرياض، السعودية</span><span data-en>Riyadh, KSA</span></p>
+        <div id="social-footer" class="ft-social"></div>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <p>© 2026 <span>رعاية | Riaya Workforce</span>. <span data-ar>جميع الحقوق محفوظة.</span><span data-en>All Rights Reserved.</span></p>
+      <p>🇸🇦</p>
+    </div>
+  </div>
+</footer>
+</div><!-- /website-view -->
+
+<!-- 404 VIEW -->
+<div id="notfound-view" class="view" style="display:none;align-items:center;justify-content:center;min-height:100vh;">
+<div class="nf-wrap">
+  <div class="nf-num">404</div>
+  <div class="nf-txt"><span data-ar>الصفحة غير موجودة</span><span data-en>Page Not Found</span></div>
+  <div class="nf-sub"><span data-ar>يبدو أن هذه الصفحة غير متاحة حالياً.</span><span data-en>This page doesn't seem to exist.</span></div>
+  <button class="btn-primary" onclick="goView('website')"><span data-ar>العودة للرئيسية</span><span data-en>Back to Home</span></button>
+</div>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox"><div class="lb-inner"><img id="lb-img" src=""><button class="lb-close" onclick="closeLB()">✕</button></div></div>
+
+<!-- Toast -->
+<div class="toast" id="toast"><span id="toast-msg">✅</span></div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
